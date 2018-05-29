@@ -1,11 +1,21 @@
-.form-actions{
-  [type="submit"]{
-    border: 0;
+$red: #f00;
+$shadow: #888;
+
+.form-actions {
+  display: flex;
+
+  [type="submit"] {
     background: var(--primary);
+    border: 0;
+    box-shadow: 5px 10px $shadow;
     color: var(--white);
     height: 50px;
     padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 5px;
+    padding-right: 20px;}
+
+  .cre-post {
+    background-color: $red;
+
   }
+
 }

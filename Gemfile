@@ -18,8 +18,12 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+gem 'autoprefixer-rails'
+
 # Use jquery
 gem 'jquery-rails'
+
+gem 'scss_lint', require: false
 
 # Use sprockets
 gem 'sprockets', '~> 3.7', '>= 3.7.1'
