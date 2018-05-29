@@ -3,4 +3,6 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 console.log('CUSTOM')
-alert('CUSTOM');
+jQuery ->
+  $(".alert .close").click ->
+    $(this).parent('.alert').hide()

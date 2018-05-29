@@ -6,16 +6,22 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
+    <header>Header</header>
     <div class="container">
-      <div class="alert alert-warning" role="alert" style="display: none;">
-        <%= notice %>
-      </div>
+      <% if notice %>
+        <div class="alert alert-warning" role="alert">
+          <%= notice %>
+          <a href="javascript:void(0)" class="close">&times;</a>
+        </div>
+      <% end if %>
 
       <!-- Content here -->
       <%= yield %>
     </div>
+    <footer>Footer</footer>
   </body>
 </html>
